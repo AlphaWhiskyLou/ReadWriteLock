@@ -7,7 +7,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ReadWriteLock</RootNamespace>
     <AssemblyName>ReadWriteLock</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ReadWriteLock\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

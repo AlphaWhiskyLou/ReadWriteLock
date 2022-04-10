@@ -16,3 +16,11 @@ F:/GitHub/ReadWriteLock/ReadWriteLock/obj/x86/Debug/ReadWriteLock.csproj.CoreCom
 F:/GitHub/ReadWriteLock/ReadWriteLock/obj/x86/Debug/ReadWriteLock.exe
 F:/GitHub/ReadWriteLock/ReadWriteLock/obj/x86/Debug/ReadWriteLock.pdb
 F:/GitHub/ReadWriteLock/ReadWriteLock/obj/x86/Debug/ReadWriteLock.csprojAssemblyReference.cache
+D:\ReadWriteLock\ReadWriteLock\bin\Debug\ReadWriteLock.exe.config
+D:\ReadWriteLock\ReadWriteLock\bin\Debug\ReadWriteLock.exe
+D:\ReadWriteLock\ReadWriteLock\bin\Debug\ReadWriteLock.pdb
+D:\ReadWriteLock\ReadWriteLock\obj\x86\Debug\ReadWriteLock.csproj.AssemblyReference.cache
+D:\ReadWriteLock\ReadWriteLock\obj\x86\Debug\ReadWriteLock.csproj.SuggestedBindingRedirects.cache
+D:\ReadWriteLock\ReadWriteLock\obj\x86\Debug\ReadWriteLock.csproj.CoreCompileInputs.cache
+D:\ReadWriteLock\ReadWriteLock\obj\x86\Debug\ReadWriteLock.exe
+D:\ReadWriteLock\ReadWriteLock\obj\x86\Debug\ReadWriteLock.pdb
