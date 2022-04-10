@@ -488,9 +488,9 @@ namespace ReadWriteLock
             if (head != null)
             {
                 if (owner != null)
-                    sb.Append("Head(持有线程："+ owner.Name + "，重入量："+ reentrants + ")\n");
+                    sb.Append("Head(Holding Thread："+ owner.Name + "，Re-entry："+ reentrants + ")\n");
                 else
-                    sb.Append("Head(持有线程：未持有线程，重入量：" + reentrants + ")\n");
+                    sb.Append("Head(Holding Thread：NULL，Re-entry：" + reentrants + ")\n");
                 Node node = head.next;
                 while (node != null)
                 {
@@ -499,14 +499,14 @@ namespace ReadWriteLock
                     {
                         while (reader != null)
                         {
-                            sb.AppendFormat("->【线程名称：{0}，类型：读，状态：{1}】", reader.thread.Name, Node.GetStatus(reader.waitStatus));
+                            sb.AppendFormat("=>[Thread Name：{0}，Type: READ, Status：{1}] \n", reader.thread.Name, Node.GetStatus(reader.waitStatus));
                             reader = reader.nextReader;
                         }
                         sb.AppendLine();
                     }
                     else
                     {
-                        sb.AppendFormat("->【线程名称：{0}，类型：写，状态：{1}】", node.thread.Name, Node.GetStatus(node.waitStatus));
+                        sb.AppendFormat("=>[Thread Name：{0}，Typr: WRITE, Status：{1}] \n", node.thread.Name, Node.GetStatus(node.waitStatus));
                         sb.AppendLine();
                     }
                     node = node.next;
@@ -529,16 +529,16 @@ namespace ReadWriteLock
             if (share)
             {
                 if (locked)
-                    Console.WriteLine(Thread.CurrentThread.Name + ":获取读锁");
+                    Console.WriteLine(Thread.CurrentThread.Name + ":Acquire Read Lock");
                 else
-                    Console.WriteLine(Thread.CurrentThread.Name + ":释放读锁");
+                    Console.WriteLine(Thread.CurrentThread.Name + ":Release Read Lock");
             }
             else
             {
                 if (locked)
-                    Console.WriteLine(Thread.CurrentThread.Name + ":获取写锁");
+                    Console.WriteLine(Thread.CurrentThread.Name + ":Acquire Write Lock");
                 else
-                    Console.WriteLine(Thread.CurrentThread.Name + ":释放写锁");
+                    Console.WriteLine(Thread.CurrentThread.Name + ":Release Write Lock");
             }
         }
     }
